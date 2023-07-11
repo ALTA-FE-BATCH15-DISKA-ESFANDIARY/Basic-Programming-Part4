@@ -2,7 +2,7 @@ function maxSequence(n: number[]): number {
     let jmlMax: number = 0;
     let jmlAwal: number = 0;
   
-    for (const num of n) {
+    for (let num of n) {
       jmlAwal = Math.max(num, jmlAwal + num);
       jmlMax = Math.max(jmlMax, jmlAwal);
     }
